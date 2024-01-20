@@ -41,7 +41,7 @@ function showHidden() {
     var headerNavList = $('#headerNavList');
     var buttonMenu = $('#buttonMenu');
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 800) {
         if (headerNavList.is(':visible')) {
             buttonMenu.removeClass('bi-x-lg');
             buttonMenu.addClass('bi-list');
