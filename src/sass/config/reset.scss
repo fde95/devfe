@@ -1,0 +1,22 @@
+@use './colors.scss';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    list-style: none;
+}
+
+body{
+    background-color: colors.$CorPrimaria;
+    color: colors.$CorFontePrimaria;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}

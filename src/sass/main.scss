@@ -1,0 +1,83 @@
+@use 'config/reset';
+@use 'config/colors';
+
+.header{
+    &--container{
+        display: flex;
+        justify-content: space-around;
+        padding: 17px 20px;
+    }
+    &--title{
+        font-weight: 600;
+        font-size: 26px;
+        &--link{
+            text-decoration: none;
+            color: colors.$CorFontePrimaria;
+        }
+    }
+    &--nav--list{
+        display: flex;
+        justify-content: space-between;
+        &--item{
+            margin: 0 4px;
+            &--link{
+                color: colors.$CorFontePrimaria;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: "Space Grotesk", sans-serif;
+                transition: ease .5s;
+                padding: 8px 16px;
+                border: 2px solid transparent;
+                &:hover{
+                    color: colors.$CorFonteSecundaria;
+                }
+                &:focus{
+                    border: 2px solid colors.$CorFonteSecundaria;
+                    border-radius: 8px;
+                    box-shadow: 0 0 8px colors.$CorFonteSecundaria;
+                }
+                &:focus-visible{
+                    outline: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        height: 90vh;
+        align-items: center;
+    }
+    &--title, &--title--autowrite{
+        font-size: 44px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+    &--title{
+        .elementor-divider-separator{
+            display: flex;
+            border-top: 6px solid colors.$CorSecundaria;
+            width: 280px;
+            padding-bottom: 40px;
+        }
+    }
+    &--content{
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    &--list{
+        display: flex;
+        &--item--link{
+            text-decoration: none;
+            color: colors.$CorFontePrimaria;
+            font-size: 38px;
+            padding-right: 56px;
+            &:hover{
+                color: colors.$CorFonteSecundaria;
+                transition: ease .5s;
+            }
+        }
+    }
+}
