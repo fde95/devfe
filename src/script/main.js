@@ -32,3 +32,5 @@ function startTyping() {
 }
 
 startTyping();
+
+AOS.init();
