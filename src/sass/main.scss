@@ -84,6 +84,15 @@
             }
         }
     }
+    &--memoji{
+        background-color: colors.$CorPrimaria-Opaca;
+        padding: 50px;
+        border-radius: 300px;
+        &--image{
+            max-width: 250px;
+            width: 100%;
+        }
+    }
 }
 .sobre-mim{
     height: 100vh;
@@ -218,6 +227,9 @@
             &--item--link{
                 font-size: 24px;
             }
+        }
+        &--memoji{
+            display: none;
         }
     }
     .sobre-mim{
