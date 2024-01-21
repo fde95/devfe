@@ -69,17 +69,17 @@
     }
     &--content{
         font-size: 18px;
-        padding-bottom: 32px;
+        padding-bottom: 40px;
     }
     &--list{
         display: flex;
         &--item--link{
             text-decoration: none;
-            color: colors.$CorFontePrimaria;
+            color: colors.$CorFonteSecundaria;
             font-size: 32px;
-            padding-right: 56px;
+            padding-right: 48px;
             &:hover{
-                color: colors.$CorFonteSecundaria;
+                color: colors.$CorFontePrimaria;
                 transition: ease .5s;
             }
         }
@@ -135,6 +135,64 @@
                     font-size: 32px;
                     font-family: "Space Grotesk", sans-serif;
                     font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+.footer{
+    padding: 30px 0;
+    & .elementor-divider-separator{
+        display: flex;
+        border-top: 3px solid #C3CAD52E;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    &--group{
+        &--card{
+            display: flex;
+            justify-content: space-between;
+            &--item{
+                display: flex;
+                align-items: center;
+                &--image{
+                    margin-right: 16px;
+                    width: 80px;
+                    padding: 10px;
+                    background-color: colors.$CorPrimaria-Opaca;
+                    border-radius: 100px;
+                }
+                &--content{
+                    &--title{
+                        font-size: 24px;
+                        font-family: "Montserrat", sans-serif;
+                        padding-bottom: 4px;
+                    }
+                    &--description{
+                        font-size: 16px;
+                        font-family: "Space Grotesk", sans-serif;
+                        color: colors.$CorFonteSecundaria;
+                    }
+                }
+                &--social{
+                    &--list{
+                        display: flex;
+                        padding-top: 8px;
+                        &--item{
+                            padding-right: 24px;
+                            &--link{
+                                font-size: 28px;
+                                color: colors.$CorFonteSecundaria;
+                                &:hover{
+                                    color: colors.$CorFontePrimaria;
+                                    transition: ease .5s;
+                                }
+                            }
+                        }
+
+                    }
                 }
             }
         }
