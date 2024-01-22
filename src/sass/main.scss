@@ -140,6 +140,26 @@
         }
     }
 }
+.minhas-skills{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    &--title{
+        font-size: 52px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+    &--description{
+        margin: 32px 0;
+        font-size: 18px;
+        color: colors.$CorFonteSecundaria;
+        cursor: default;
+        &--link{
+            text-decoration: none;
+            color: colors.$CorFonteSecundaria;
+            cursor: default;
+        }
+    }
+}
 
 
 .footer{
@@ -169,11 +189,13 @@
                         font-size: 24px;
                         font-family: "Montserrat", sans-serif;
                         padding-bottom: 4px;
+                        cursor: default;
                     }
                     &--description{
                         font-size: 16px;
                         font-family: "Space Grotesk", sans-serif;
                         color: colors.$CorFonteSecundaria;
+                        cursor: default;
                     }
                 }
                 &--social{
@@ -324,6 +346,34 @@
             }
         }
     }
+    .minhas-skills{
+        &--title{
+            font-size: 40px;
+        }
+        &--description{
+            font-size: 14px;
+        }
+    }
+    .footer{
+        &--group{
+            display: block;
+            margin-left: 20px;
+            &--card{
+                display: block;
+                &--item{
+                    margin-bottom: 0px;
+                    &--social{
+                        &--list{
+                            margin-left: 100px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     .section-name{
         display: flex;
         font-size: 14px;

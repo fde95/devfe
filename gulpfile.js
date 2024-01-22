@@ -6,7 +6,7 @@ const concat = require('gulp-concat'); //Concatenador CSS e JS
 const rename = require('gulp-rename'); //Renomeador CSS e JS
 const uglify = require('gulp-uglify'); //Minificador JS
 const babel = require('gulp-babel'); //Babel
-// const imagemin = require("gulp-imagemin"); //Minificação de Imagens
+const imagemin = require("gulp-imagemin"); //Minificação de Imagens
 
 
 /*Minificação HTML*/
@@ -31,13 +31,13 @@ function compilaSass (){
 }
 
 
-// /*Minificação de Imagens */
-// function imageMin (){
-//     return gulp
-//         .src('./src/images/*')
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('./build/images'))
-// }
+/*Minificação de Imagens */
+function imageMin (){
+    return gulp
+        .src('./src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/images'))
+}
 
 /*Minificação JavaScript */
 function scripts (){
@@ -55,7 +55,7 @@ function scripts (){
         .pipe(gulp.dest('./build/script'))
 }
 
-exports.default = gulp.parallel(index, compilaSass, scripts);
+exports.default = gulp.parallel(index, compilaSass, imageMin, scripts);
 exports.watch = function(){
     gulp.watch('*.html', gulp.parallel(index))
     gulp.watch('./src/sass/*.scss', gulp.parallel(compilaSass))
