@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./vendor/aos/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <link rel="shortcut icon" href="/src/images/favicon.ico" />
     <link rel="stylesheet" href="./build/style/main.css">
@@ -27,6 +28,7 @@
         <div class="header--container">
             <h1 class="header--title">
                 <a class="header--title--link"
+                title="Página Inicial - Felipe Espinoza"
                 href="./index.html">
                     Felipe Espinoza
                 </a>
@@ -37,35 +39,35 @@
                     <li class="header--nav--list--item">
                         <a class="header--nav--list--item--link"
                         href="./index.html"
-                        aria-label="Ir para a página principal">
+                        title="Início">
                             início
                         </a>
                     </li>
                     <li class="header--nav--list--item">
                         <a  class="header--nav--list--item--link"
                         href="#"
-                        aria-label="Ir para a página sobre mim">
+                        title="Sobre">
                             sobre
                         </a>
                     </li>
                     <li class="header--nav--list--item">
                         <a  class="header--nav--list--item--link"
                         href="#"
-                        aria-label="Acessar o meu portfólio">
+                        title="Portfólior">
                             portfólio
                         </a>
                     </li>
                     <li class="header--nav--list--item">
                         <a  class="header--nav--list--item--link"
                         href="#"
-                        aria-label="Acessar o meu blog">
+                        title="Blog">
                             blog
                         </a>
                     </li>
                     <li class="header--nav--list--item">
                         <a  class="header--nav--list--item--link"
                         href="#"
-                        aria-label="Ir para a página de contatos">
+                        title="Contato">
                             contato
                         </a>
                     </li>
@@ -92,25 +94,29 @@
                     data-aos-duration="1500" data-aos-delay="2000">
                         <li class="hero--list--item">
                             <a target="_blank" class="hero--list--item--link" 
-                            href="https://github.com/fde95">
+                            href="https://github.com/fde95"
+                            title="Ir até o github do desenvolvedor">
                                 <i class="bi bi-github"></i>
                             </a>
                         </li>
                         <li class="hero--list--item">
                             <a target="_blank" class="hero--list--item--link" 
-                            href="https://www.linkedin.com/in/fde95/">
+                            href="https://www.linkedin.com/in/fde95/"
+                            title="Ir até o linkedin do desenvolvedor">
                                 <i class="bi bi-linkedin"></i>
                             </a>
                         </li>
                         <li class="hero--list--item">
                             <a target="_blank" class="hero--list--item--link" 
-                            href="https://www.instagram.com/fde.95/">
+                            href="https://www.instagram.com/fde.95/"
+                            title="Ir até o instagram do desenvolvedor">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </li>
                         <li class="hero--list--item">
                             <a target="_blank" class="hero--list--item--link" 
-                            href="mailto:contato@devfe.net?subject=DEV FE - Contato via site">
+                            href="mailto:contato@devfe.net?subject=DEV FE - Contato via site"
+                            title="Enviar e-mail para o desenvolvedor">
                                 <i class="bi bi-envelope-arrow-up"></i>
                             </a>
                         </li>
@@ -147,11 +153,12 @@
                 </p>
                 <a class="button"
                 href="#"
-                data-aos="fade" data-aos-duration="1800" data-aos-delay="1500" data-aos-once="true">
+                data-aos="fade" data-aos-duration="1800" data-aos-delay="1500" data-aos-once="true"
+                title="Ir até a página sobre mim">
                     mais sobre mim
                 </a>
-                <span class="elementor-divider-separator" data-aos="fade" data-aos-delay="1800" data-aos-once="true"></span>
-                <div class="sobre-mim--certifications" data-aos="fade" data-aos-duration="2000" data-aos-delay="2300" data-aos-once="true">
+                <span class="elementor-divider-separator"></span>
+                <div class="sobre-mim--certifications">
                     <div class="sobre-mim--certifications--group">
                         <div class="sobre-mim--certifications--group--counter">
                             <h3 class="sobre-mim--certifications--group--counter--item">+ 10</h3>
@@ -177,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="minhas-skills">
+        <section class="minhas-skills" data-aos="fade-up" data-aos-once="true">
             <div class="container">
                 <div class="section-name">
                     <div class="section-name--curly-bracket">
@@ -194,17 +201,57 @@
                     Linguagens & <br/>
                     Tecnologias
                 </h3>
+                <div class="minhas-skills--group">
+                    <ul class="minhas-skills--group--list">
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="2300">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--html5.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="1800">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--css3.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="1300">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--sass.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="800">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--gulp.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="300">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--javascript.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="800">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--jquery.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="1300">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--bootstrap.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="1800">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--wordpress.png" alt="">
+                        </li>
+                        <li class="minhas-skills--group--list--item"
+                        data-aos="fade" data-aos-once="true" data-aos-duration="2000" data-aos-delay="2300">
+                            <img class="minhas-skills--group--list--item--image" src="./src/images/minhas-skills--joomla.png" alt="">
+                        </li>
+                    </ul>
+                </div>
                 <p class="minhas-skills--description"
                 data-aos="fade" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true">
                     Minha jornada no universo da programação é uma busca constante por aprimoramento. Atualmente, estou cursando <strong>Engenharia da Computação pela 
                     <a target="_blank" href="https://descomplica.com.br/"
-                    class="minhas-skills--description--link">
+                    class="minhas-skills--description--link" title="Acessar site da faculdade Descomplica">
                         Descomplica</strong></a>, uma jornada que amplia ainda mais meu entendimento sobre a interseção entre teoria e prática na computação.
                     <br/><br/>
                     Sou apaixonado por transformar ideias em códigos sólidos e funcionais. Em minha trajetória, conquistei expertise em <strong>HTML5, CSS3, Sass, Gulp, JavaScript,</strong> e na <strong>metodologia BEM do CSS</strong>. Tenho maestria em manipular a elegância do<strong> jQuery</strong> e a praticidade do <strong>Bootstrap</strong>.
                     <br/><br/>
                     Nos domínios dos CMS, desbravo o WordPress e, como<strong> desenvolvedor na 
-                    <a target="_blank" href="https://www.superix.com.br/"
+                    <a target="_blank" href="https://www.superix.com.br/" title="Ir até o site da Superix"
                     class="minhas-skills--description--link">
                         Superix</a>, mergulho nos desafios do Joomla</strong>, onde aprimoro não apenas o código, mas também minha destreza em gestão de hospedagem e configurações de DNS.
                 </p>
@@ -219,7 +266,7 @@
                     <div class="footer--group--card--item">
                         <img class="footer--group--card--item--image" src="./src/images/footer--memoji.png" alt="Memoji de Felipe Espinoza sorrindo">
                         <div class="footer--group--card--item--content">
-                            <h5 class="footer--group--card--item--content--title">Felipe Espinoza</h5>
+                            <h4 class="footer--group--card--item--content--title">Felipe Espinoza</h4>
                             <p class="footer--group--card--item--content--description">
                                 Desenvolvedor Front End
                             </p>
@@ -230,25 +277,29 @@
                             <ul class="footer--group--card--item--social--list">
                                 <li class="footer--group--card--item--social--list--item">
                                     <a class="footer--group--card--item--social--list--item--link" 
-                                    target="_blank" href="https://github.com/fde95">
+                                    target="_blank" href="https://github.com/fde95"
+                                    title="Ir até o github do desenvolvedor">
                                         <i class="bi bi-github"></i>
                                     </a>
                                 </li>
                                 <li class="footer--group--card--item--social--list--item">
                                     <a class="footer--group--card--item--social--list--item--link" 
-                                    target="_blank" href="https://www.linkedin.com/in/fde95/">
+                                    target="_blank" href="https://www.linkedin.com/in/fde95/"
+                                    title="Ir até o linkedin do desenvolvedor">
                                         <i class="bi bi-linkedin"></i>
                                     </a>
                                 </li>
                                 <li class="footer--group--card--item--social--list--item">
                                     <a class="footer--group--card--item--social--list--item--link" 
-                                    target="_blank" href="https://www.instagram.com/fde.95/">
+                                    target="_blank" href="https://www.instagram.com/fde.95/"
+                                    title="Ir até o instagram do desenvolvedor">
                                     <i class="bi bi-instagram"></i>
                                     </a>
                                 </li>
                                 <li class="footer--group--card--item--social--list--item">
                                     <a class="footer--group--card--item--social--list--item--link" 
-                                    target="_blank" href="mailto:contato@devfe.net?subject=DEV FE - Contato via site">
+                                    target="_blank" href="mailto:contato@devfe.net?subject=DEV FE - Contato via site"
+                                    title="Enviar e-mail para o desenvolvedor">
                                         <i class="bi bi-envelope-arrow-up"></i>
                                     </a>
                                 </li>
@@ -256,6 +307,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer--copy">
+                <p class="footer--copy--text">
+                    © DEV FE  todos os direitos reservados  |  projetado por <a href="https://www.linkedin.com/in/fde95/" target="_blank" title="Ir até o linkedin do desenvolvedor" class="footer--copy--text--link"><strong>Felipe Espinoza</strong></a>
+                </p>
             </div>
         </div>
     </footer>

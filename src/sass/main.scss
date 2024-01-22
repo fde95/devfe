@@ -159,6 +159,24 @@
             cursor: default;
         }
     }
+    &--group{
+        padding-top:50px;
+        &--list{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            &--item{
+                font-size: 90px;
+                color: colors.$CorFonteSecundaria;
+                background-color: colors.$CorPrimaria-Opaca;
+                border-radius: 8px;
+                padding: 16px;
+                &--image{
+                    max-width: 64px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -216,6 +234,21 @@
 
                     }
                 }
+            }
+        }
+    }
+    &--copy{
+        display: flex;
+        margin-top: 24px;
+        justify-content: center;
+        align-items: center;
+        &--text{
+            font-size: 14px;
+            font-family: "Space Grotesk", sans-serif;
+            color: colors.$CorFonteSecundaria;
+            &--link{
+                text-decoration: none;
+                color: colors.$CorFonteSecundaria;
             }
         }
     }
@@ -325,7 +358,6 @@
         }
         &--certifications{
             display: block;
-            
             margin: 20px 50px 0;
             &--group{
                 padding-left: 0;
@@ -353,6 +385,9 @@
         &--description{
             font-size: 14px;
         }
+        &--group{
+            display: none;
+        }
     }
     .footer{
         &--group{
@@ -370,6 +405,10 @@
                     }
                 }
             }
+        }
+        &--copy--text{
+            font-size: 10px;
+            text-align: center;
         }
     }
 
