@@ -173,15 +173,79 @@
                 padding: 16px;
                 &--image{
                     max-width: 64px;
+                    transition: ease .5s;
+                    &:hover{
+                        scale: 1.05;
+                    }
                 }
             }
+        }
+    }
+}
+.meu-portfolio{
+    height: 100%;
+    background-color: colors.$CorPrimaria;
+    display: flex;
+    align-items: center;
+    &--title{
+        opacity: 100%;
+        font-size: 52px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+    &--grid{
+        display: flex;
+        justify-content: space-between;
+        &--column{
+            &--card{
+                margin-top: 24px;
+                margin-bottom: 50px;
+                background-color: colors.$CorPrimaria-Opaca;
+                padding: 40px 32px;
+                border-radius: 2rem;
+                max-width: 100%;
+                &--link{
+                    text-decoration: none;
+                    color: colors.$CorFontePrimaria;
+                    opacity: 50%;
+                    transition: ease-in .5s;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+                &--title{
+                    font-size: 28px;
+                    font-family: "Space Grotesk", sans-serif;
+                    padding-bottom: 24px;
+                }
+                &--image{
+                    transition: ease .5s;
+                    max-width: 100%;
+                    &:hover{
+                        scale: 1.03;
+                    }
+                }
+                &--description{
+                    text-align: end;
+                    padding-top: 24px;
+                }
+            }
+        }
+    }
+    &--link{
+        text-decoration: none;
+        font-size: 28px;
+        text-align: center;
+        color: colors.$CorFonteSecundaria;
+        transition: ease-in .5s;
+        &:hover{
+            color: colors.$CorFontePrimaria;
         }
     }
 }
 
 
 .footer{
-    padding: 30px 0;
+    padding: 70px 0;
     & .elementor-divider-separator{
         display: flex;
         border-top: 3px solid #C3CAD52E;
@@ -276,11 +340,11 @@
     font-weight: bold;
     border: 3px solid transparent;
     border-radius: 12px;
-    opacity: .50;
     cursor: pointer;
-    transition: opacity ease 1s;
+    transition: ease 1s;
+    opacity: 60%;
     &:hover{
-        opacity: 1;
+        opacity: 100%;
         box-shadow: 0 0 8px colors.$CorSecundaria;
     }
     &:focus{
@@ -389,6 +453,27 @@
             display: none;
         }
     }
+    .meu-portfolio{
+        &--title{
+            opacity: 100%;
+            font-size: 52px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        &--grid{
+            display: block;
+            &--column{
+                &--card{
+                    padding: 32px 24px;
+                    &--title{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        &--link{
+            font-size: 20px;
+        }
+    }
     .footer{
         &--group{
             display: block;
@@ -453,6 +538,32 @@
     .hero{
         & .container{
             width: 700px;
+        }
+    }
+    .minhas-skills{
+        &--group{
+            display: none;
+        }
+    }
+    .meu-portfolio{
+        &--title{
+            opacity: 100%;
+            font-size: 52px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        &--grid{
+            &--column{
+                &--card{
+                    max-width: 350px;
+                    padding: 32px 24px;
+                    &--title{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        &--link{
+            font-size: 20px;
         }
     }
 }
